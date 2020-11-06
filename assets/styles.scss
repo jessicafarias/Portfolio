@@ -1,0 +1,137 @@
+@import 'Position';
+$font : 'Oswald', sans-serif;
+
+
+.name {
+  font-family: $font;
+}
+.descripcion {
+  font-family: $font;
+}
+.container {
+    max-width: 960px;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-image: url(../images/corazon.png);
+    //background-position: top center;
+    background-size: cover;
+    border-radius: 5px;
+    animation-name: scrolling;
+    animation-duration: 40s;   
+    animation-iteration-count: infinite;
+  }
+  @keyframes scrolling {
+    0%   {background-position: top center;}
+    25%  {background-position: 10% center;}
+    50%  {background-position: 50% center;}
+    75%  {background-position: 10% center;}
+    100%  {background-position: top center;}
+  }
+  @keyframes scrolling2 {
+    0%   {background-position: top center;}
+    100%  {background-position: center center;}
+  }
+  
+  .product-device-2 {
+    position: absolute;
+    width: 300px;
+    height: 540px;
+    border-radius: 21px;
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  
+  .product-device-2::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-image: url(../images/university.png);
+    //background-position: top center;
+    background-size: cover;
+    border-radius: 5px;
+    animation-name: scrolling2;
+    animation-duration: 25s;   
+    animation-iteration-count: infinite;
+  }
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      flex: 1;
+    }
+  }
+  
+  .overflow-hidden { overflow: hidden; }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  
