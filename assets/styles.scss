@@ -1,9 +1,9 @@
 @import 'Position';
 $font : 'Oswald', sans-serif;
 
-
 .name {
   font-family: $font;
+  
 }
 .descripcion {
   font-family: $font;
@@ -37,7 +37,7 @@ $font : 'Oswald', sans-serif;
   .product-device {
     position: absolute;
     right: 10%;
-    bottom: -30%;
+    bottom: 0%;
     width: 300px;
     height: 540px;
     background-color: #333;
@@ -161,3 +161,67 @@ $font : 'Oswald', sans-serif;
     position:relative;
     top:1px;
   }
+
+
+  /*canvas*/
+canvas { 
+  align-items: center;
+  display: block;
+  margin: auto; }
+/*HEADER*/
+
+/*CLASES*/
+#Creative {
+  position:relative; 
+  margin:0px 0px; 
+  min-height: 200px;
+  max-height: 300px;
+  background-color: #0d0011;
+}
+
+/*MAP*/
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
+/*MECHA*/
+.mecha{
+  background-color: rgb(236, 174, 60);
+  color: #0d0011;
+}
+
+.bg-name{
+  //background-image: url('../images/back.jpg');
+  background-size: 150%;
+  min-height: 25vh;
+}
+
+
+.black{
+  a{
+    color: #da6200;
+  }
+}
+
+.img{
+  border-radius: 10px;
+}
+
+.bg-img1{
+  background-image: url('../images/back.jpg');
+  background-size: 180%;
+}
+.bg-img2{
+  background-image: url('../images/fibra.jpg');
+  background-size: cover;
+}
