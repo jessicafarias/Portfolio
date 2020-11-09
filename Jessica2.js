@@ -22,12 +22,12 @@ frame2.on("ready", function() { // ES6 Arrow Function
 
     var words = ["Jessica", "Farias", "CSS", "HTML", "C#", "Ladder", "PLC", "SolidWorks", "JavaScript", "Java", "SQL", "Visual\nStudio", "VSC", "MySQL", 
     "SASS", "c++", "Photoshop", "Proteus", "SQLite", "Android", 
-    "pgadmin", "Google\nCloud", "SIEMENS", "Automation"];
+    "pgadmin", "Google\nCloud"];
     var planets = []; // pool circles
     var count = 0;
     timeout(5, function () {
-        interval({min:100, max:1000}, function (obj) {
-            var JesNum=rand(70,250);
+        interval({min:100, max:500}, function (obj) {
+            var JesNum=rand(70,100);
             if (planets.length < words.length) {
                 var c = new Circle(JesNum).ble("difference");
                 c.label = new Label(words[count], 30, null, white, white, {backgroundColor:black}).centerReg(c);
@@ -36,7 +36,7 @@ frame2.on("ready", function() { // ES6 Arrow Function
                 var c = planets[count];
             }
             c.sca(.5).reg(0).center(stage).mov(rand(-stageW,stageW),rand(-stageH,stageH)).bot().ord(1).alp(0).rot(rand(360))
-                .animate({alpha:1}, 5500)
+                .animate({alpha:1}, 5000)
                 .animate({
                     props:{regX:stageW/2, scale:1.5},
                     time:22000,
@@ -44,7 +44,7 @@ frame2.on("ready", function() { // ES6 Arrow Function
                         target.animate({alpha:0}, 3000);
                     }
                 });
-            c.color = Pick.choose(["#5ACCD9","#48A3AD","#3F8F96","#53C9C1","#3B8E87 ","#21AFA1"]);
+            c.color = Pick.choose(["#AF000B70","#E5910070","#EFB41070","#EDCF0B70","#EA6F1770 ","#FAF9FC70"]);
             c.label.rot(-c.rotation+rand(-10,10));
             if (count == words.length-1) {
                 obj.pause();
