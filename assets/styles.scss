@@ -20,13 +20,19 @@ $font : 'Oswald', sans-serif;
     background-color: rgba(0, 0, 0, .85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
+    color: #da6200;
+    
+    span{
+      fill: #da6200;
+      border-color: rgb(255,102,203);
+    }
   }
   .site-header a {
-    color: #999;
+    color: rgb(211, 94, 27);
     transition: ease-in-out color .15s;
   }
   .site-header a:hover {
-    color: #fff;
+    color: rgb(255, 169, 10);
     text-decoration: none;
   }
   
@@ -174,7 +180,7 @@ canvas {
 #Creative {
   position:relative; 
   margin:0px 0px; 
-  min-height: 200px;
+  min-height: 40vh;
   max-height: 300px;
   background-image: url('../images/back.jpg');
   background-size: cover;
@@ -226,3 +232,11 @@ canvas {
   background-image: url('../images/fibra.jpg');
   background-size: cover;
 }
+
+.color{
+  color: #da6200;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
