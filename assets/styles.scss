@@ -64,14 +64,12 @@ $font : 'Oswald', sans-serif;
     background-size: cover;
     border-radius: 5px;
     animation-name: scrolling;
-    animation-duration: 40s;   
+    animation-duration: 80s;   
     animation-iteration-count: infinite;
   }
   @keyframes scrolling {
     0%   {background-position: top center;}
-    25%  {background-position: 10% center;}
-    50%  {background-position: 50% center;}
-    75%  {background-position: 10% center;}
+    50%  {background-position: 30% center;}
     100%  {background-position: top center;}
   }
   @keyframes scrolling2 {
